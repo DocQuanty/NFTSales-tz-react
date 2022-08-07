@@ -1,0 +1,31 @@
+.card-block {
+  &__img-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 45%;
+    @media (max-width: 1024px) {
+      max-width: 35%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
+  }
+}
+
+.img-section {
+  &__img-item {
+    width: 100%;
+    margin-right: 4px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    img {
+      border-radius: 10px;
+      max-width: 100%;
+      min-width: 40px;
+    }
+  }
+}

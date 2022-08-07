@@ -1,0 +1,92 @@
+@import "../../styles/variableColors.scss";
+
+.gradient-border {
+  &:hover {
+    .gradient-border__link {
+      background: rgba(255, 96, 115, 0.2);
+      &::before {
+        background: rgba(255, 96, 115, 0.1);
+        transition: all 0.5s ease-in 0.1s;
+      }
+    }
+  }
+
+  &__link {
+    text-decoration: none;
+    line-height: calc(18px / 16px * 100%);
+    position: relative;
+    background-image: linear-gradient(
+      90.05deg,
+      var(--lg-third),
+      var(--lg-fourth),
+      var(--lg-fifth)
+    );
+    border-radius: 8px;
+    font-size: 14px;
+    display: flex;
+    white-space: nowrap;
+    transition: background-image 300ms linear;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 1px;
+      right: 1px;
+      bottom: 1px;
+      left: 1px;
+      background-color: var(--background);
+      transition: background-color 300ms linear;
+      border-radius: 7px;
+      box-sizing: border-box;
+      z-index: 0;
+    }
+  }
+}
+
+.link {
+  &__text-gradient {
+    padding: 13.7px 19.5px 14px 19px;
+    font-size: 16px;
+    font-family: "Graphik-Bold";
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    // background: linear-gradient(90.05deg, rgba(255, 96, 115, 1), rgba(255, 65, 190, 1), rgba(197, 45, 250, 1));
+    background-image: linear-gradient(
+      90.05deg,
+      var(--lg-second),
+      var(--lg-fourth),
+      var(--lg-fifth)
+    );
+    transition: background-image 300ms linear;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #000;
+    display: table;
+    @media (max-width: 480px) {
+      padding: 9px 10px 7px 10px;
+    }
+  }
+
+  &__text-black {
+    padding: 7px 11px 4px 12px;
+    font-size: 14px;
+    font-family: "Graphik-Regular";
+    font-weight: 600;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    color: var(--txt-onBtn);
+    transition: background-image 300ms linear;
+    display: table;
+
+    // &::after {
+    //   content: url("../../img/card-img/arrow.svg");
+    //   margin-left: 3px;
+    // }
+  }
+  &__arrow-icn {
+    margin-left: 3px;
+  }
+}

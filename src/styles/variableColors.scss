@@ -1,0 +1,43 @@
+html[data-theme="dark"] {
+  --def-textColor: #fff;
+  --opacity-text: rgba(255, 255, 255, 0.8);
+  --background: #000;
+  --txt-onBtn: #fff;
+  --backGr-desc: rgba(245, 245, 247, 0.04);
+  --sm-white: #f6f6f8;
+  --sm-border: #333333;
+  --lightBlue: #0787ff;
+  --logo-name: #f5f4fa;
+  --sm-darkBlue: #0b2349;
+  --linkColor: rgba(255, 255, 255, 0.8);
+  --b-hover: rgba(255, 94, 91, 0.2);
+  --b-BeforeHover: rgba(255, 179, 124, 0.3);
+  --darkBlue: #485564;
+  --lg-first: #ffb37c;
+  --lg-second: #f9514f;
+  --lg-third: #fd7182;
+  --lg-fourth: #fb7dff;
+  --lg-fifth: #ba8efb;
+}
+
+html[data-theme="light"] {
+  --def-textColor: #000;
+  --opacity-text: rgba(0, 0, 0, 0.8);
+  --background: #fff;
+  --txt-onBtn: #000;
+  --backGr-desc: #f6f6f8;
+  --sm-white: #f6f6f8;
+  --sm-border: #e5e5e6;
+  --lightBlue: #0787ff;
+  --darkBlue: #332d54;
+  --sm-darkBlue: #0b2349;
+  --linkColor: rgba(0, 0, 0, 0.8);
+  --b-hover: rgba(255, 94, 91, 0.2);
+  --b-BeforeHover: rgba(255, 179, 124, 0.3);
+  --logo-name: #332d54;
+  --lg-first: #ffb37c;
+  --lg-second: #f9514f;
+  --lg-third: #ff6073;
+  --lg-fourth: #ff41be;
+  --lg-fifth: #c52dfa;
+}

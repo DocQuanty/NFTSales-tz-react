@@ -1,0 +1,23 @@
+@import "./font.scss";
+@import "../styles/variableColors.scss";
+
+body {
+  font-family: "Graphik-Regular";
+  font-size: 15px;
+  max-width: 1323px;
+  padding: 0 63px;
+  margin: 0 auto;
+  background-color: var(--background);
+  transition: background-color 200ms linear;
+
+  @media (max-width: 1024px) {
+    padding: 0 25px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 0 15px;
+  }
+  @media (max-width: 480px) {
+    padding: 0 5px;
+  }
+}
