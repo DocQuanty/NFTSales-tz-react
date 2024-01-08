@@ -1,5 +1,6 @@
 # Getting Started with Create React App
 
+The project contains a beautiful adaptive gradient design, as well as a custom json database for dynamic loading of cards.
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
